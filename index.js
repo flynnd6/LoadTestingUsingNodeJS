@@ -1,6 +1,6 @@
 "use strict";
 const childProc = require("child_process");
-const CHILD_PROCESSES = 20;
+const CHILD_PROCESSES = 500;
 const URL = 'https://newdimensionsactive.ie/';
 
 (async () => {
@@ -34,8 +34,9 @@ const URL = 'https://newdimensionsactive.ie/';
     const sum = times.reduce((a, b) => a + b, 0);
     const avg = (sum / times.length) || 0;
     console.log(`average: ${avg}`);
-    console.log("success!");
+    console.log("Success!");
   } else {
-    console.log("failures!");
+    console.log("Failures!");
+    console.log(responses.filter(false).length + ' of ' + responses.length)
   }
 })();
