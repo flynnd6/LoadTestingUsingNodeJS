@@ -1,7 +1,7 @@
 "use strict";
 const childProc = require("child_process");
 const CHILD_PROCESSES = 20;
-const URL = 'https://www.google.com/';
+const URL = 'https://newdimensionsactive.ie/';
 
 (async () => {
   let times = [];
